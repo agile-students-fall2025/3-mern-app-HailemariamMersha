@@ -57,6 +57,20 @@ app.get('/messages/:messageId', async (req, res) => {
     })
   }
 })
+//a route to handle about us page
+app.get('/about', (req, res) => {
+  res.json({
+    title: 'About Hailemariam Mersha',
+    paragraphs: [
+      'Hi! I am Hailemariam Mersha, or simply, Haile. I am a software developer with a passion for creating web applications.',
+      'This is a simple MERN stack app developed for a course on Agile Development.',
+      'I am excited to hear from you! Use the contact form on the home page to send me a message.',
+    ],
+    imageUrl: '/images/me.jpeg', 
+  })
+})
+
+
 // a route to handle logging out users
 app.post('/messages/save', async (req, res) => {
   // try to save the message to the database
