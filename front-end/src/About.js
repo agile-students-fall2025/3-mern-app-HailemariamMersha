@@ -18,3 +18,5 @@ export default function About() {
     </div>
   )
 }
+// this module fetches the json data from the backend and puts it in html format
+// and display it in the about us page
